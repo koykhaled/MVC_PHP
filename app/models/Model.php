@@ -2,7 +2,7 @@
 
 namespace app\Mo;
 
-require_once __DIR__ . "/config/connection.php";
+require __DIR__ . "/../../config/connection.php";
 
 use app\database\Connection;
 use Exception;
