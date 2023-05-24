@@ -54,13 +54,14 @@ class User extends Model
         $users = array();
         foreach ($results as $result) {
             $user = new User();
-            $user->setId($result['user_id']);
-            $user->setName($result['user_name']);
-            $user->setEmail($result['user_email']);
-            $user->setType($result['user_type']);
-            $user->setPassword($result['password']);
+            $user->setId($result->user_id);
+            $user->setName($result->user_name);
+            $user->setEmail($result->user_email);
+            $user->setType($result->user_type);
+            $user->setPassword($result->password);
             $users[] = $user;
         }
+
         return $users;
     }
 }
