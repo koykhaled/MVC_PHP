@@ -4,7 +4,7 @@ require_once __DIR__ . '/app/controllers/UserController.php';
 
 use app\Co\UserController;
 
-define('BASE_PATH', 'PHPCOURSE/DARREBENI/family_task');
+define('BASE_PATH', '/PHPCOURSE/Darrebeni/family_task/');
 
 $route = $_SERVER['REQUEST_URI'];
 

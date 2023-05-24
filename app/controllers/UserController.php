@@ -8,7 +8,7 @@ require_once __DIR__ . '/../models/User.php';
 
 
 
-abstract class UserController
+class UserController
 {
     private $userModel;
 
