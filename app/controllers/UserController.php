@@ -3,12 +3,13 @@
 namespace app\Co;
 
 use app\Mo\User;
+use BaseController;
 
 require_once __DIR__ . '/../models/User.php';
+require_once __DIR__ . '/BaseController.php';
 
 
-
-class UserController
+class UserController extends BaseController
 {
     private $userModel;
 
@@ -20,6 +21,6 @@ class UserController
     public function index()
     {
         $users = $this->userModel->getAllUsers();
-        require __DIR__ . '/../../views/user/index.php';
+        $this->render('../../views/user/index.php', compact('users'));
     }
 }

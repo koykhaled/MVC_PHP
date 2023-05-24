@@ -34,8 +34,12 @@ class Model
             $select = "SELECT * from $table_name";
             $query = $this->connect->prepare($select);
             $query->execute();
-            $result = $query->fetchAll(PDO::FETCH_ASSOC);
-            return $result;
+            $results = array();
+            while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+                $results[] = $row;
+            }
+
+            return $results;
         } catch (Exception $e) {
             echo "error while fetch users" . $e->getMessage();
         }
