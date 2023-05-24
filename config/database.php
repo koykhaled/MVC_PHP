@@ -1,10 +1,7 @@
-<?php 
+<?php
 return [
-    'host'=>'localhost',
-    'username'=>'root',
-    'password'=>'',
-    'database'=>'mvc',
-
-]
-;
-?>
+    'host' => 'localhost',
+    'username' => 'root',
+    'password' => 'kiko',
+    'database' => 'task',
+];
