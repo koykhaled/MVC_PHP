@@ -2,5 +2,5 @@
 <?php
 
 foreach ($users as $user) {
-    echo $user->getId() . "-" . $user->getName() . "<br>";
+    echo $user->getId() . "- gggg" . $user->getName() . "<br>";
 }
